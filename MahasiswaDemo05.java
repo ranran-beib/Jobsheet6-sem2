@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class MahasiswaDemo05 {
     public static void main(String[] args) {
 
@@ -34,6 +33,14 @@ public class MahasiswaDemo05 {
 
         System.out.println("\nBubble Sort (DESC):");
         list.bubbleSort();
+        list.tampil();
+
+        System.out.println("\nSelection Sort (DESC):");
+        list.selectionSort();
+        list.tampil();
+
+        System.out.println("\nInsertion Sort (DESC):");
+        list.insertionSort();
         list.tampil();
     }
 }
