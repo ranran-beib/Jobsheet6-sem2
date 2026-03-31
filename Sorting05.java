@@ -23,6 +23,20 @@ public class Sorting05 {
         }
     }
 
+    void SelectionSort(){
+        for (int i = 0; i < jumData - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < jumData; j++) {
+                if (data[j] < data[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            int temp = data[minIndex];
+            data[i] = data[minIndex];
+            data[minIndex] = temp;
+        }
+    }
+
     void tampil(){
         for (int i = 0; i < jumData; i++) {
             System.out.print(data[i] + " ");
